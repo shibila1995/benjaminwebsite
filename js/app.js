@@ -5,6 +5,7 @@ $(document).ready(function(){
       slidesToScroll:1,
       prevArrow:".prev-btn",
       nextArrow:".next-btn",
+     /*TO DISPLAY ONLY 2 IMAGES SLIDER SCREENSIZE BELOW 992*/
       responsive:[
          {
             breakpoint:992,
@@ -12,6 +13,7 @@ $(document).ready(function(){
              slidesToShow:2,
             }
          },
+          /*TO DISPLAY ONLY 1 IMAGES SLIDER SCREENSIZE BELOW 768*/
          {
           breakpoint:768,
           settings:{
@@ -21,7 +23,7 @@ $(document).ready(function(){
       ]
  
     });
- 
+ /*when hamburger icon is clicked whole content moved to right side*/
     $('.nav-trigger').click(function(){
        $('.site-content-wrapper').toggleClass('scaled');
     })
